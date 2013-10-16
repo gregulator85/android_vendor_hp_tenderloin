@@ -75,12 +75,5 @@ PRODUCT_COPY_FILES += \
     vendor/hp/tenderloin/proprietary/etc/firmware/wm8958_enh_eq.wfw:system/etc/firmware/wm8958_enh_eq.wfw \
     vendor/hp/tenderloin/proprietary/etc/firmware/q6.b02:system/etc/firmware/q6.b02 \
     vendor/hp/tenderloin/proprietary/etc/firmware/q6.b03:system/etc/firmware/q6.b03 \
-    vendor/hp/tenderloin/proprietary/bin/dcvs:system/bin/dcvs \
-    vendor/hp/tenderloin/proprietary/bin/usbhub:system/bin/usbhub \
-    vendor/hp/tenderloin/proprietary/bin/mpld:system/bin/mpld \
-    vendor/hp/tenderloin/proprietary/bin/battery_charging:system/bin/battery_charging \
-    vendor/hp/tenderloin/proprietary/bin/usbhub_init:system/bin/usbhub_init \
-    vendor/hp/tenderloin/proprietary/bin/sensord:system/bin/sensord \
     vendor/hp/tenderloin/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/hp/tenderloin/proprietary/bin/thermald:system/bin/thermald \
-    vendor/hp/tenderloin/proprietary/bin/dcvsd:system/bin/dcvsd
+    vendor/hp/tenderloin/proprietary/bin/thermald:system/bin/thermald
