@@ -18,18 +18,6 @@
 PRODUCT_COPY_FILES += \
     vendor/hp/tenderloin/proprietary/lib/libcamera.so:obj/lib/libcamera.so
 
-# Live wallpaper packages
-PRODUCT_PACKAGES := \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    VisualizationWallpapers \
-    librs_jni
-
-# Publish that we support the live wallpaper feature.
-PRODUCT_COPY_FILES += \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
-
 PRODUCT_COPY_FILES += \
     vendor/hp/tenderloin/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/hp/tenderloin/proprietary/lib/libgemini.so:system/lib/libgemini.so \
@@ -38,18 +26,17 @@ PRODUCT_COPY_FILES += \
     vendor/hp/tenderloin/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
     vendor/hp/tenderloin/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     vendor/hp/tenderloin/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    vendor/hp/tenderloin/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     vendor/hp/tenderloin/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/hp/tenderloin/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/hp/tenderloin/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/hp/tenderloin/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/hp/tenderloin/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/hp/tenderloin/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/hp/tenderloin/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/hp/tenderloin/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/hp/tenderloin/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     vendor/hp/tenderloin/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
     vendor/hp/tenderloin/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/hp/tenderloin/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/hp/tenderloin/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/hp/tenderloin/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
     vendor/hp/tenderloin/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
@@ -76,4 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/hp/tenderloin/proprietary/etc/firmware/wm8958_enh_eq.wfw:system/etc/firmware/wm8958_enh_eq.wfw \
     vendor/hp/tenderloin/proprietary/etc/firmware/q6.b02:system/etc/firmware/q6.b02 \
     vendor/hp/tenderloin/proprietary/etc/firmware/q6.b03:system/etc/firmware/q6.b03 \
-    vendor/hp/tenderloin/proprietary/bin/mpdecision:system/bin/mpdecision
+    vendor/hp/tenderloin/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/hp/tenderloin/proprietary/bin/thermald:system/bin/thermald \
+    vendor/hp/tenderloin/proprietary/etc/thermald.conf:system/etc/thermald.conf \
